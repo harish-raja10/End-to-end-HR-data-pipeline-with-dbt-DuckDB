@@ -26,6 +26,19 @@ dbt_challenge/
 ├── Makefile              # Run the entire pipeline
 └── README.md             # This doc
 ```
+##  Data Flow Diagram
+```text
+[CSV Files] → MySQL → Python (Extract)
+              ↓
+         Parquet Files (Bronze)
+              ↓
+        dbt Models (Staging/Dim/Fact)
+              ↓
+     DuckDB Queries (Gold Layer)
+              ↓
+         KPI Output (JSON)
+```
+
 
 ##  Setup Instructions
 
