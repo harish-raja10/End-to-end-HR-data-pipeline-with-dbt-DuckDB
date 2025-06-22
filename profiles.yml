@@ -1,0 +1,11 @@
+o6_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: lake/duckdb.db
+      schema: main
+      threads: 4
+      extensions:
+        - parquet
+        - iceberg

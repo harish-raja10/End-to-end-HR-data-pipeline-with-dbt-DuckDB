@@ -1,0 +1,153 @@
+[0m01:14:59.016413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026054DCB0E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026052DD1BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026056187C50>]}
+
+
+============================== 01:14:59.024167 | 61666b60-6e5c-4d6a-9a70-d4e6efdc261c ==============================
+[0m01:14:59.024167 [info ] [MainThread]: Running with dbt=1.10.2
+[0m01:14:59.025561 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\1nh18\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init o6_dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:14:59.074350 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\1nh18\.dbt
+[0m01:14:59.079029 [debug] [MainThread]: Starter project path: C:\Users\1nh18\OneDrive\Desktop\Harsha\Harish\Complete-Python-Bootcamp-main\dbt_challenge\venv\Lib\site-packages\dbt\include\starter_project
+[0m01:14:59.136874 [info ] [MainThread]: 
+Your new dbt project "o6_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m01:14:59.138045 [info ] [MainThread]: Setting up your profile.
+[0m01:15:56.808371 [error] [MainThread]: Encountered an error:
+list index out of range
+[0m01:15:56.811181 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\1nh18\OneDrive\Desktop\Harsha\Harish\Complete-Python-Bootcamp-main\dbt_challenge\venv\Lib\site-packages\dbt\cli\requires.py", line 161, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1nh18\OneDrive\Desktop\Harsha\Harish\Complete-Python-Bootcamp-main\dbt_challenge\venv\Lib\site-packages\dbt\cli\requires.py", line 111, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\1nh18\OneDrive\Desktop\Harsha\Harish\Complete-Python-Bootcamp-main\dbt_challenge\venv\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+  File "C:\Users\1nh18\OneDrive\Desktop\Harsha\Harish\Complete-Python-Bootcamp-main\dbt_challenge\venv\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\1nh18\OneDrive\Desktop\Harsha\Harish\Complete-Python-Bootcamp-main\dbt_challenge\venv\Lib\site-packages\dbt\task\init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "C:\Users\1nh18\OneDrive\Desktop\Harsha\Harish\Complete-Python-Bootcamp-main\dbt_challenge\venv\Lib\site-packages\dbt\task\init.py", line 243, in ask_for_adapter_choice
+    return available_adapters[numeric_choice - 1]
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+
+[0m01:15:56.812618 [debug] [MainThread]: Command `dbt init` failed at 01:15:56.812482 after 58.01 seconds
+[0m01:15:56.812949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026056183A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260562172F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260561ECC00>]}
+[0m01:15:56.813330 [debug] [MainThread]: Flushing usage events
+[0m01:15:59.277728 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:17:03.828572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AE7D0F0E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AE5D11BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AE90C7C50>]}
+
+
+============================== 01:17:03.834638 | a22bf2a9-344d-4b3c-8a10-8df4a85f1995 ==============================
+[0m01:17:03.834638 [info ] [MainThread]: Running with dbt=1.10.2
+[0m01:17:03.836064 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\1nh18\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init o6_dbt', 'send_anonymous_usage_stats': 'True'}
+[0m01:17:03.872284 [info ] [MainThread]: A project called o6_dbt already exists here.
+[0m01:17:03.873577 [debug] [MainThread]: Command `dbt init` succeeded at 01:17:03.873433 after 0.22 seconds
+[0m01:17:03.873954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AE90C3820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AE91570B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AE912C160>]}
+[0m01:17:03.874338 [debug] [MainThread]: Flushing usage events
+[0m01:17:05.445682 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:17:27.645585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287E1D230E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287DFCF5BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287E30D7C50>]}
+
+
+============================== 01:17:27.658567 | 3ba6ed43-0fdf-41ec-9331-5351c15c6fd9 ==============================
+[0m01:17:27.658567 [info ] [MainThread]: Running with dbt=1.10.2
+[0m01:17:27.659433 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\1nh18\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:17:27.693055 [info ] [MainThread]: dbt version: 1.10.2
+[0m01:17:27.694133 [info ] [MainThread]: python version: 3.13.5
+[0m01:17:27.695071 [info ] [MainThread]: python path: C:\Users\1nh18\OneDrive\Desktop\Harsha\Harish\Complete-Python-Bootcamp-main\dbt_challenge\venv\Scripts\python.exe
+[0m01:17:27.695659 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m01:17:27.696304 [info ] [MainThread]: Using profiles dir at C:\Users\1nh18\.dbt
+[0m01:17:27.697247 [info ] [MainThread]: Using profiles.yml file at C:\Users\1nh18\.dbt\profiles.yml
+[0m01:17:27.697917 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\1nh18\OneDrive\Desktop\Harsha\Harish\Complete-Python-Bootcamp-main\dbt_challenge\dbt_project.yml
+[0m01:17:27.698534 [info ] [MainThread]: Configuration:
+[0m01:17:27.699149 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m01:17:27.699672 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m01:17:27.700273 [info ] [MainThread]: Required dependencies:
+[0m01:17:27.700898 [debug] [MainThread]: Executing "git --help"
+[0m01:17:27.760876 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m01:17:27.761379 [debug] [MainThread]: STDERR: "b''"
+[0m01:17:27.761838 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m01:17:27.762488 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m01:17:27.763119 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m01:17:27.763692 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\1nh18\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m01:17:27.764265 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\1nh18\OneDrive\Desktop\Harsha\Harish\Complete-Python-Bootcamp-main\dbt_challenge\dbt_project.yml> not found
+
+[0m01:17:27.765340 [debug] [MainThread]: Command `dbt debug` failed at 01:17:27.765199 after 0.29 seconds
+[0m01:17:27.765718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287E30D3BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287E2FCEF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287E313CC00>]}
+[0m01:17:27.766241 [debug] [MainThread]: Flushing usage events
+[0m01:17:28.828843 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:17:46.407744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA1860F0E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA16611BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA1A997C50>]}
+
+
+============================== 01:17:46.415101 | 7dff52cb-33b9-4586-bfc3-eac605485c28 ==============================
+[0m01:17:46.415101 [info ] [MainThread]: Running with dbt=1.10.2
+[0m01:17:46.416254 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\1nh18\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt init o6_dbt', 'send_anonymous_usage_stats': 'True'}
+[0m01:17:46.450524 [info ] [MainThread]: A project called o6_dbt already exists here.
+[0m01:17:46.452043 [debug] [MainThread]: Command `dbt init` succeeded at 01:17:46.451848 after 0.23 seconds
+[0m01:17:46.452485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA1A993820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA1AA270B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA1A9FC160>]}
+[0m01:17:46.452916 [debug] [MainThread]: Flushing usage events
+[0m01:17:47.488902 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:18:11.608840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC4F630E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC2F59BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC6317C50>]}
+
+
+============================== 01:18:11.614354 | 795c0f40-2e69-43b1-b7b7-9a58c42f69c5 ==============================
+[0m01:18:11.614354 [info ] [MainThread]: Running with dbt=1.10.2
+[0m01:18:11.615762 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\1nh18\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt init o6_dbt', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:18:11.658414 [debug] [MainThread]: Starter project path: C:\Users\1nh18\OneDrive\Desktop\Harsha\Harish\Complete-Python-Bootcamp-main\dbt_challenge\venv\Lib\site-packages\dbt\include\starter_project
+[0m01:18:11.697005 [info ] [MainThread]: 
+Your new dbt project "o6_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m01:18:11.698162 [info ] [MainThread]: Setting up your profile.
+[0m01:18:14.422612 [info ] [MainThread]: Profile o6_dbt written to C:\Users\1nh18\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m01:18:14.424121 [debug] [MainThread]: Command `dbt init` succeeded at 01:18:14.423964 after 2.99 seconds
+[0m01:18:14.424525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC6313A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC77EF890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC7868160>]}
+[0m01:18:14.424894 [debug] [MainThread]: Flushing usage events
+[0m01:18:16.536661 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:26:08.857481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221799CF0E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221779D1BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002217AD8BC50>]}
+
+
+============================== 01:26:08.862566 | 2d755587-d23d-4a47-987c-1854f8063df0 ==============================
+[0m01:26:08.862566 [info ] [MainThread]: Running with dbt=1.10.2
+[0m01:26:08.863406 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\1nh18\\.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m01:26:08.863921 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\1nh18\OneDrive\Desktop\Harsha\Harish\Complete-Python-Bootcamp-main\dbt_challenge\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:26:08.864928 [debug] [MainThread]: Command `dbt run` failed at 01:26:08.864798 after 0.13 seconds
+[0m01:26:08.865237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002217AD86520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002217AC7AF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002217ADEC6B0>]}
+[0m01:26:08.865560 [debug] [MainThread]: Flushing usage events
+[0m01:26:10.295715 [debug] [MainThread]: An error was encountered while trying to flush usage events

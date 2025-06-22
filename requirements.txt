@@ -1,0 +1,8 @@
+pandas
+sqlalchemy
+pymysql
+pyarrow
+duckdb[parquet]
+dbt-core
+dbt-duckdb
+cd

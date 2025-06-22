@@ -1,0 +1,17 @@
+```gitignore
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# DuckDB and lakehouse
+lake/duckdb.db
+lake/bronze/*
+
+mysql_data/
+
+# VSCode & OS
+.vscode/
+.DS_Store
+```

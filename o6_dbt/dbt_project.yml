@@ -1,0 +1,9 @@
+name: o6_dbt
+version: '1.0'
+profile: o6_dbt
+
+config-version: 2
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
