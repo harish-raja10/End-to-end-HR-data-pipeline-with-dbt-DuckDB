@@ -60,14 +60,14 @@ make run_all
 
 ##  Sample KPI Output
 ```bash
-python kpi.py --month 2024-05
+python kpi.py --month 2024-03
 ```
 ```json
 {
-  "gross_payroll": 123456,
-  "net_payroll": 112233,
-  "tds_due": 11323,
-  "active_employees": 58
+  "gross_payroll": 2487630.0,
+  "net_payroll": 2263594.0,
+  "tds_due": 224036.0,
+  "active_employees": 88
 }
 ```
 
