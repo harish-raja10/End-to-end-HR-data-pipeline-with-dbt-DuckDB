@@ -28,7 +28,7 @@ tds_q = f"""
 SELECT 
     SUM(tds_due) AS tds_due
 FROM main.fact_tds_obligation
-WHERE month LIKE '{month_pattern}'
+WHERE strftime('%Y-%m', month) = '{args.month}'
 """
 
 emp_q = f"""

@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: stg_employees
+    description: "Staging model for employee records"
+    columns:
+      - name: id
+        tests: [not_null, unique]
+      - name: first_name
+        tests: [not_null]
+      - name: dept
+        tests: [not_null]
+
+  - name: stg_payroll
+    description: "Staging model for payroll"
+    columns:
+      - name: employee_id
+        tests: [not_null]
+      - name: month
+        tests: [not_null]
+    tests:
+      - unique:
+          column_name: "employee_id || '-' || month"
+
+  - name: stg_leaves
+    description: "Staging model for leaves"
+    columns:
+      - name: employee_id
+        tests: [not_null]
+      - name: date
+        tests: [not_null]
+    tests:
+      - unique:
+          column_name: "employee_id || '-' || date"
